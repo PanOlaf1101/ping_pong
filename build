@@ -4,7 +4,7 @@ if [[ $(uname) == "Darwin" ]]; then
 		-I/opt/homebrew/opt/sfml/include \
 		-L/opt/homebrew/opt/sfml/lib \
 		-lsfml-window -lsfml-graphics -lsfml-system
-elif [[ $(uname) == "linux" ]]; then
+elif [[ $(uname) == "Linux" ]]; then
 	g++ -std=gnu++20 -O3 -Wall -Werror ping_pong.cpp -o ping_pong \
 		-lsfml-window -lsfml-graphics -lsfml-system
 else
